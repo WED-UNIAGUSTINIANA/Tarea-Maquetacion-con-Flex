@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquetación con Flex - Tarea</title>
+    <!-- Vinculamos el CSS externo -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <div class="instrucciones">
+        <h1>Tarea de Maquetación con Flex</h1>
+        <p><strong>Objetivo:</strong> Practicar el uso de la propiedad CSS <code>display: flex</code> para crear layouts modernos y responsivos.</p>
+        <p><strong>Instrucciones:</strong> Analiza el código siguiente y completa los ejercicios propuestos al final de la página.</p>
+        <p><strong>Nota:</strong> Esta página utiliza exclusivamente <code>display: flex</code> para todos los layouts. No se ha usado Grid u otras técnicas de maquetación.</p>
+    </div>
+
+    <div class="contenedor-principal">
+        <header class="header">
+            <h1>Header</h1>
+            <p>Área de cabecera maquetada con Flex</p>
+            
+            <div class="nav-flex">
+                <div class="nav-item">Inicio</div>
+                <div class="nav-item">Servicios</div>
+                <div class="nav-item">Portafolio</div>
+                <div class="nav-item">Contacto</div>
+            </div>
+        </header>
+        
+        <div class="contenido-principal">
+            <nav class="sidebar">
+                <h2>Sidebar</h2>
+                <ul>
+                    <li>Enlace 1</li>
+                    <li>Enlace 2</li>
+                    <li>Enlace 3</li>
+                    <li>Enlace 4</li>
+                    <li>Enlace 5</li>
+                </ul>
+            </nav>
+            
+            <main class="main">
+                <h2>Contenido Principal</h2>
+                <p>Esta es el área de contenido principal utilizando <code>display: flex</code> para todos los elementos.</p>
+                
+                <h3>Galería con Flex</h3>
+                <div class="galeria">
+                    <div class="galeria-item">Item 1</div>
+                    <div class="galeria-item">Item 2</div>
+                    <div class="galeria-item">Item 3</div>
+                    <div class="galeria-item">Item 4</div>
+                    <div class="galeria-item">Item 5</div>
+                    <div class="galeria-item">Item 6</div>
+                    <div class="galeria-item">Item añadido</div>
+                    <div class="galeria-item">Item añadido</div>
+                </div>
+                
+                <h3>Tarjetas con Flex</h3>
+                <div class="tarjetas">
+                    <div class="tarjeta">
+                        <h3>Tarjeta 1</h3>
+                        <p>Contenido de la tarjeta 1. Todo el layout de esta tarjeta está construido con <code>display: flex</code>.</p>
+                    </div>
+                    <div class="tarjeta">
+                        <h3>Tarjeta 2</h3>
+                        <p>Contenido de la tarjeta 2. Observa cómo las tarjetas se organizan automáticamente con flex.</p>
+                    </div>
+                    <div class="tarjeta">
+                        <h3>Tarjeta 3</h3>
+                        <p>Contenido de la tarjeta 3. Flex permite crear layouts flexibles con poco código.</p>
+                    </div>
+                </div>
+            </main>
+            
+            <aside class="aside">
+                <h2>Aside</h2>
+                <p>Contenido adicional o publicidad. Este aside también usa <code>display: flex</code> para su layout interno.</p>
+                <div class="galeria">
+                    <div class="galeria-item">Pub 1</div>
+                    <div class="galeria-item">Pub 2</div>
+                </div>
+            </aside>
+        </div>
+
+        <section class="perfil-usuario">
+            <h2>PERFIL DE USUARIO</h2>
+            <div class="contenedor-perfil">
+                <div class="perfil-imagen">
+                    <img id="imagen-user" src="https://i.pinimg.com/736x/f9/5e/94/f95e943c665866dea947dce79748ce1d.jpg" alt="Imagen de perfil">
+                </div>
+                <div class="perfil-info">
+                    <h3 class="nombre">Laura Sofia Pedraza</h3>
+                    <p class="descripcion">Hola.. Soy Laura, estudiante de desarrollo de software , me apasiona el diseño y junto con esto el diseño web, disfruto mucho estudiar y aprender</p>
+                </div>
+            </div>
+        </section>
+
+
+        <footer class="footer">
+            <p>Laura - © 2025 Mi Sitio Web - Maquetado exclusivamente con display: flex</p>
+            <div class="footer-links">
+                <div class="footer-link">Términos y Condiciones</div>
+                <div class="footer-link">Política de Privacidad</div>
+                <div class="footer-link">Contacto</div>
+                <div class="footer-link">Soporte</div>
+            </div>
+        </footer>
+    </div>
+    
+    <div class="ejercicios">
+        <h2>Ejercicios para la tarea:</h2>
+        <ol>
+            <li>Cambia la dirección del contenedor principal para que el sidebar esté a la derecha en lugar de a la izquierda.</li>
+            <li>Modifica la galería para que los elementos se muestren en 4 columnas en lugar de 3.</li>
+            <li>Ajusta el flex-grow y flex-shrink de las tarjetas para que se expandan de manera diferente.</li>
+            <li>Cambia la alineación de los elementos en el header para que estén a la izquierda en lugar de centrados.</li>
+            <li>Haz que el footer se convierta en una columna en dispositivos móviles en lugar de una fila.</li>
+            <li>Implementa un menú horizontal en el sidebar usando flex en lugar de la columna actual.</li>
+            <li>Crea un nuevo componente de perfil de usuario usando flex para alinear la imagen y el texto.</li>
+        </ol>
+    </div>
+        
+    <div class="desafio">
+        <h3>Desafío adicional:</h3>
+        <p>Crea un sistema de rating con estrellas usando flex. Debe incluir 5 estrellas que se pueden colorear de forma parcial para mostrar puntuaciones como 4.5 estrellas.</p>
+    </div>
+
+    <section class="rating">
+        <h2>Califica mi trabajo:</h2>
+        <div class="raiting-container">
+            <input type="radio" name="radio" id="star-1">
+            <label for="star-1"><i class="fa-solid fa-star"></i></label>
+
+            <input type="radio" name="radio" id="star-2">
+            <label for="star-2"><i class="fa-solid fa-star"></i></label>
+
+            <input type="radio" name="radio" id="star-3">
+            <label for="star-3"><i class="fa-solid fa-star"></i></label>
+
+            <input type="radio" name="radio" id="star-4">
+            <label for="star-4"><i class="fa-solid fa-star"></i></label>
+
+            <input type="radio" name="radio" id="star-5">
+            <label for="star-5"><i class="fa-solid fa-star"></i></label>
+
+        </div>
+        
+    </section>
+</body>
+</html>
